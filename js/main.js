@@ -142,34 +142,99 @@ function initClipboardButtons() {
 }
 
 /**
- * IntersectionObserver for navigation scrollspy
+ * Navigation scrollspy & bottom-of-page detector
  */
 function initScrollSpy() {
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+  const navLinks = Array.from(document.querySelectorAll('.nav-link'));
 
   if (!sections.length || !navLinks.length) return;
 
-  const observerOptions = {
-    root: null,
-    rootMargin: '-20% 0px -70% 0px',
-    threshold: 0
+  function setActive(id) {
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      link.classList.toggle('active', href === `#${id}`);
+    });
+  }
+
+  function updateSpy() {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+
+    // 1. If at the bottom of the page (within 120px threshold), activate contacts
+    if (windowHeight + scrollY >= docHeight - 120) {
+      setActive('contacts');
+      return;
+    }
+
+    // 2. If at top of page (in hero section, before first section)
+    const firstSectionTop = sections[0].offsetTop;
+    if (scrollY < firstSectionTop - 250) {
+      navLinks.forEach(link => link.classList.remove('active'));
+      return;
+    }
+
+    // 3. Find active section based on focal point (35% down the viewport)
+    const focalPoint = scrollY + windowHeight * 0.35;
+    let currentId = '';
+
+    for (let i = 0; i < sections.length; i++) {
+      const section = sections[i];
+      const top = section.offsetTop;
+      const bottom = top + section.offsetHeight;
+
+      if (focalPoint >= top && focalPoint < bottom) {
+        currentId = section.getAttribute('id');
+        break;
+      }
+    }
+
+    // Fallback if between sections
+    if (!currentId) {
+      for (let i = sections.length - 1; i >= 0; i--) {
+        if (scrollY >= sections[i].offsetTop - 200) {
+          currentId = sections[i].getAttribute('id');
+          break;
+        }
+      }
+    }
+
+    if (currentId) {
+      setActive(currentId);
+    }
+  }
+
+  let ticking = false;
+  const onScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateSpy();
+        ticking = false;
+      });
+      ticking = true;
+    }
   };
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        navLinks.forEach(link => {
-          if (link.getAttribute('href') === `#${id}`) {
-            link.classList.add('active');
-          } else {
-            link.classList.remove('active');
-          }
-        });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+
+  // Update immediately when clicking nav links
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        const id = href.substring(1);
+        if (id) {
+          setActive(id);
+        }
       }
     });
-  }, observerOptions);
+  });
 
-  sections.forEach(section => observer.observe(section));
+  // Initial check & hash check
+  updateSpy();
+  setTimeout(updateSpy, 150);
+  window.addEventListener('hashchange', () => setTimeout(updateSpy, 50));
 }
+
