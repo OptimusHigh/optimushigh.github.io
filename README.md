@@ -10,7 +10,7 @@
   <a href="https://t.me/mc_pluck">
     <img src="https://img.shields.io/badge/Telegram-@mc__pluck-06b6d4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
-  <a href="https://www.curseforge.com/minecraft/mc-mods/create-rf-crafter">
+  <a href="https://www.curseforge.com/members/optimushigh/projects">
     <img src="https://img.shields.io/badge/CurseForge-Моды_и_релизы-f16436?style=for-the-badge&logo=curseforge&logoColor=white" alt="CurseForge" />
   </a>
 </p>
@@ -37,10 +37,11 @@
 | Проект | Описание | Стек |
 | :--- | :--- | :--- |
 | 💇‍♀️ **[Oksana Moroz Studio](https://oksanamoroz.ru/)** | Коммерческий сайт салона колористики в Москве. 0₽ за конструкторы, мгновенная загрузка на смартфонах. | HTML5, GSAP, AVIF/WebP, Nginx |
-| 🎧 **[AuxBass (TG Player)](https://github.com/OptimusHigh/auxbass)** | Музыкальный стриминговый плеер в стиле Hi-Fi аппаратуры без затрат на хранилище. | FastAPI, Vue 3, Aiogram 3, PWA |
+| 🎧 **[AuxBass (TG Player)](https://aux.ganj4craft.ru)** | Музыкальный стриминговый плеер в стиле Hi-Fi аппаратуры без затрат на хранилище (Бот: [@auxbassbot](https://t.me/auxbassbot)). | FastAPI, Vue 3, Aiogram 3, PWA |
 | ⚙️ **[Create: RF Crafter](https://www.curseforge.com/minecraft/mc-mods/create-rf-crafter)** | Опубликованный на CurseForge мод компактной автоматизации верстаков. | Java 21, NeoForge, JEI API |
-| 🛡️ **[GanjaCraft Infrastructure](https://launcher.ganj4craft.ru)** | Десктоп-лаунчер на Electron, крипто-античит GanjaGate, Yggdrasil API и ForgePipe. | Electron, Bytecode Mixins, Python |
-| 🗺️ **[BlueMap TFC Compatibility](https://github.com/OptimusHigh)** | Автоматический Python-генератор 3D-веб-карт для сервера, устранивший битые текстуры. | Python, Pillow, BlueMap API |
+| ☕ **[TFC: Advanced Drinks](https://www.curseforge.com/minecraft/mc-mods/tfc-advanced-drinks)** | Мод реалистичных напитков, агрономии и термодинамики персонажа на CurseForge. | Java 21, NeoForge, TFC API |
+| 🗺️ **[BlueMap TFC Compatibility](https://www.curseforge.com/minecraft/texture-packs/bluemap-tfc)** | Генератор 3D-веб-карт для сервера, опубликованный на CurseForge. | Python, Pillow, BlueMap API |
+| 🛡️ **[GanjaCraft Infrastructure](https://legacy.ganj4craft.ru/launcher.html)** | Десктоп-лаунчер на Electron, античит GanjaGate, ванильный сервер онлайн. | Electron, Bytecode Mixins, Python |
 
 ---
 
