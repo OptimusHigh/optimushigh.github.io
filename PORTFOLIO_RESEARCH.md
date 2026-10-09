@@ -66,7 +66,7 @@
 ---
 
 ### 1.4. Journey Drinks (jsdrinks) — Термодинамика напитков и агрономия
-* **Папка:** `d:\GanjaCraft\git\journeyTFC\jsdrinks`
+* **Папка:** `d:\Ganj4Craft\git\journeyTFC\jsdrinks`
 * **Тип кейса:** Коммерческий аддон к хардкорному выживанию по детальному ТЗ.
 * **Какую проблему решил:** Заказчику требовалась реалистичная и атмосферная система чая и кофе, логично вплетенная в физику окружающего мира: сбор листьев, обжарка зерен, помол и правильный температурный баланс.
 * **Что сделано простыми словами:**
@@ -102,8 +102,8 @@
 
 ---
 
-### 2.3. GanjaCraft Launcher — Десктоп-клиент с авторизацией по коду
-* **Папка:** `d:\GanjaCraft\git\ganja_launcher` | **Репозиторий:** `github.com/OptimusHigh/ganjacraft_launcher`
+### 2.3. Ganj4Craft Launcher — Десктоп-клиент с авторизацией по коду
+* **Папка:** `d:\Ganj4Craft\git\ganja_launcher` | **Репозиторий:** `github.com/OptimusHigh/ganj4craft_launcher`
 * **Публичный адрес:** [launcher.ganj4craft.ru](https://launcher.ganj4craft.ru)
 * **Человеческая суть:** Фирменная программа для игроков, убирающая головную боль с установкой Java и ручной настройкой файлов.
 * **Главные преимущества:**
@@ -116,7 +116,7 @@
 ---
 
 ### 2.4. Портал GANJ4CRAFT — Тематический веб-сайт сообщества
-* **Папка:** `d:\GanjaCraft\git\ganjacraft.ru` | **Репозиторий:** `github.com/OptimusHigh/ganjacraft.ru`
+* **Папка:** `d:\Ganj4Craft\git\ganj4craft.ru` | **Репозиторий:** `github.com/OptimusHigh/ganj4craft.ru`
 * **Живой прод:** [ganj4craft.ru](https://ganj4craft.ru/)
 * **Человеческая суть:** Игровой веб-портал с витриной сезона, интерактивными карточками боссов недели, системой контрактов «Хитман» и рейтингами игроков.
 * **Стек:** HTML5, Tailwind CSS, JavaScript, Lenis Smooth Scroll, Lottie, AOS.
@@ -133,29 +133,29 @@
 
 ---
 
-### 3.2. GanjaGate — Серверный античит и защита от крашей
-* **Папка:** `d:\GanjaCraft\git\ganja_gate` | **Репозиторий:** `github.com/OptimusHigh/ganja_gate`
+### 3.2. Ganj4Gate — Серверный античит и защита от крашей
+* **Папка:** `d:\Ganj4Craft\git\ganja_gate` | **Репозиторий:** `github.com/OptimusHigh/ganja_gate`
 * **Человеческая суть:** Защита сервера от читеров: сверка клиентских модов по криптографическому токену (nonce) до входа в мир, а также низкоуровневое устранение фатальных крашей рендеринга (`Pose stack not empty`) на уровне байткода.
 * **Стек:** Java 21, NeoForge, Sponge Mixin, Bytecode Engineering, Network Codecs.
 
 ---
 
 ### 3.3. ForgePipe — Внутриигровой REST API и контроль экономики
-* **Папка:** `d:\GanjaCraft\git\ganjacraft-forgepipe` | **Репозиторий:** `github.com/OptimusHigh/ganjacraft-forgepipe`
+* **Папка:** `d:\Ganj4Craft\git\ganj4craft-forgepipe` | **Репозиторий:** `github.com/OptimusHigh/ganj4craft-forgepipe`
 * **Человеческая суть:** Встроенный веб-сервер в движке игры: позволяет внешним ботам управлять балансами онлайн и оффлайн игроков (прямая запись в NBT-файлы), принимать ставки на дуэли и блокирует дюпы через переписанную логику сжигания предметов.
 * **Стек:** Java 21, NeoForge, Netty HTTP, Sponge Mixin, NBT Stream API, KubeJS.
 
 ---
 
-### 3.4. GanjaCrafter Bot & Core Server — Центральный бэк-офис
-* **Папка:** `d:\GanjaCraft\git\ganjacrafter_bot_renew` | **Репозиторий:** `github.com/OptimusHigh/ganjacrafter_bot_2`
+### 3.4. Ganj4Crafter Bot & Core Server — Центральный бэк-офис
+* **Папка:** `d:\Ganj4Craft\git\ganj4crafter_bot_renew` | **Репозиторий:** `github.com/OptimusHigh/ganj4crafter_bot_2`
 * **Человеческая суть:** Сервер авторизации (эмуляция Yggdrasil API), выдача скинов/плащей, модерация заявок игроков через Telegram и автосинхронизация файлов игры через защищенный туннель FRP/Rsync.
 * **Стек:** Python, FastAPI, python-telegram-bot, SQLAlchemy Async, aiosqlite, FRP, Rsync.
 
 ---
 
 ### 3.5. JourneyTFC — Модули хардкорного выживания
-* **Папка:** `d:\GanjaCraft\git\journeyTFC` (`autosawmill`, `jns-nifty-wagons`, `respawner`)
+* **Папка:** `d:\Ganj4Craft\git\journeyTFC` (`autosawmill`, `jns-nifty-wagons`, `respawner`)
 * **Человеческая суть:** Кинетическая автоматическая лесопилка с 3D-моделями, физика повозок и защищенное возрождение с выбором безопасной точки спавна и сохранением экипировки.
 * **Стек:** Java 21, NeoForge, TFC API, BlockBench 3D.
 
@@ -182,9 +182,9 @@
 3. **Сетка кейсов с фильтрами:**  
    - **Все работы**
    - **Коммерческие заказы** (Oksana Moroz, BlueMap TFC, Nations, Journey Drinks)
-   - **Сайты и WebApp** (AuxBass, Oksana Moroz, GanjaCraft Portal)
-   - **Telegram и Боты** (AuxBass Bot, Restream Bot, GanjaCrafter)
-   - **Геймдев и Серверы** (GanjaGate, ForgePipe, Create: RF Crafter, Launcher)
+   - **Сайты и WebApp** (AuxBass, Oksana Moroz, Ganj4Craft Portal)
+   - **Telegram и Боты** (AuxBass Bot, Restream Bot, Ganj4Crafter)
+   - **Геймдев и Серверы** (Ganj4Gate, ForgePipe, Create: RF Crafter, Launcher)
 
 4. **Карточка каждого проекта:**  
    - Понятная проблема → Ваше решение → Результат для человека.

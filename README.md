@@ -41,7 +41,7 @@
 | ⚙️ **[Create: RF Crafter](https://www.curseforge.com/minecraft/mc-mods/create-rf-crafter)** | Опубликованный на CurseForge мод компактной автоматизации верстаков. | Java 21, NeoForge, JEI API |
 | ☕ **[TFC: Advanced Drinks](https://www.curseforge.com/minecraft/mc-mods/tfc-advanced-drinks)** | Мод реалистичных напитков, агрономии и термодинамики персонажа на CurseForge. | Java 21, NeoForge, TFC API |
 | 🗺️ **[BlueMap TFC Compatibility](https://www.curseforge.com/minecraft/texture-packs/bluemap-tfc)** | Генератор 3D-веб-карт для сервера, опубликованный на CurseForge. | Python, Pillow, BlueMap API |
-| 🛡️ **[GanjaCraft Infrastructure](https://legacy.ganj4craft.ru/launcher.html)** | Десктоп-лаунчер на Electron, античит GanjaGate, ванильный сервер онлайн. | Electron, Bytecode Mixins, Python |
+| 🛡️ **[Ganj4Craft Infrastructure](https://legacy.ganj4craft.ru/launcher.html)** | Десктоп-лаунчер на Electron, античит Ganj4Gate, ванильный сервер онлайн. | Electron, Bytecode Mixins, Python |
 
 ---
 
